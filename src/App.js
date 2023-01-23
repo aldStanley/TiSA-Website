@@ -11,12 +11,13 @@ import Navbar from "./components/Navbar";
 import PhotoGallery from "./components/PhotoGallery"
 import oneOone from ".//image/101pic.png"
 import bg from "./image/bg.png"
+import bg2 from "./image/background.png"
 
 
 function App() {
   return (
     <React.Fragment>
-      <div style={{backgroundImage: `url(${oneOone})`, backgroundRepeat:"no-repeat",backgroundSize:"contain", height:1056, width:1848}}>
+      <div style={{backgroundImage: `url(${bg2})`, backgroundRepeat:"no-repeat",backgroundSize:"contain", height:1056, width:1848}}>
       
       <Navbar />
         <Routes>

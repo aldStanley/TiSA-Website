@@ -9,16 +9,21 @@ import MenuIcon from '@material-ui/icons/Menu';
 import transitions from '@material-ui/core/styles/transitions';
 
 
-
+//style={{ background: 'transparent', boxShadow: 'none'}}
 export default class Navbar extends Component {
   render() {
     return (
       <div>
-        <AppBar position="fixed" style={{ background: 'transparent', boxShadow: 'none'}}>
+        <AppBar position="fixed" > 
           <Toolbar>
-            <IconButton>
-              <MenuIcon />
-            </IconButton>
+            
+            <ul className="navbar-nav align-items-center">
+                    <li className="nav-item me-5">
+                        <Link to="/" className="nav-link">
+                            Products
+                        </Link>
+                    </li>
+                </ul>
             <Typography variant="h6">About Us</Typography>
             <Button color="white" align="right">Events</Button>
           </Toolbar>
