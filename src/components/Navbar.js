@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import {Link} from "react-router-dom";
 import { AppBar, makeStyles } from "@material-ui/core";
-import  { Toolbar } from '@material-ui/core';
-import { Typography, Box } from '@mui/material';
+import { Box } from '@mui/material';
 import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import transitions from '@material-ui/core/styles/transitions';
+import {View, Text} from 'react-native';
+//import IconButton from '@material-ui/core/IconButton';
+//import MenuIcon from '@material-ui/icons/Menu';
+//import transitions from '@material-ui/core/styles/transitions';
+import UTButton from "./UTButton"
 
 
 
@@ -43,6 +43,9 @@ export default class Navbar extends Component {
               PHOTO GALLERY
             </Button>
           </Box>
+          <View>
+            <UTButton/>
+          </View>
         </AppBar>
       </div>
     )
