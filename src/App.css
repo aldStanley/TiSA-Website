@@ -23,3 +23,7 @@ body{
 .text-bright{
   color: var(--lightBlue);
 }
+
+.click:hover {
+  --background: rgba(255, 166, 0, 0.884);
+}
