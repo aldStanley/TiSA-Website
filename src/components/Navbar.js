@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import { AppBar, makeStyles } from "@material-ui/core";
+import { AppBar, makeStyles, StylesProvider } from "@material-ui/core";
 import { Box } from '@mui/material';
 import Button from '@material-ui/core/Button';
-import {View, Text} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 //import IconButton from '@material-ui/core/IconButton';
 //import MenuIcon from '@material-ui/icons/Menu';
 //import transitions from '@material-ui/core/styles/transitions';
@@ -43,7 +43,7 @@ export default class Navbar extends Component {
               PHOTO GALLERY
             </Button>
           </Box>
-          <View>
+          <View style={styles.centered}>
             <UTButton/>
           </View>
         </AppBar>
@@ -51,3 +51,13 @@ export default class Navbar extends Component {
     )
   }
 }
+
+const styles = StyleSheet.create({
+  centered: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "transparent",
+  },
+
+});
