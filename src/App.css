@@ -1,29 +1,33 @@
-:root{
+:root {
   --lightBlue: #f0f6f2;
   --lightGreen: #dbe2d2;
   --mainWhite: #f3f3f3;
 }
 
-body{
+body {
   font-family: 'Oswald', sans-serif !important;
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
 }
 
-.text-title{
+.text-title {
   font-family: 'Montserrat', sans-serif;
-  letter-spacing:  0.3rem;
+  letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
 
-.text-blue{
+.text-blue {
   color: var(--mainBlue);
 }
 
-.text-bright{
+.text-bright {
   color: var(--lightBlue);
 }
 
 .click:hover {
   --background: rgba(255, 166, 0, 0.884);
+}
+
+div {
+  margin-top: 0
 }
